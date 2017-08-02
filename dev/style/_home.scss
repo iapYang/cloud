@@ -1,3 +1,4 @@
+$blue: #2FA5F4;
 .main,
 .home {
     position: relative;
@@ -43,8 +44,45 @@
             border-radius: 25px;
             transition: box-shadow .1s;
             &:hover {
-                box-shadow: 2px 2px 20px 0 rgba(35,103,86,.5);
+                box-shadow: 2px 2px 20px 0 rgba(35, 103, 86, .5);
             }
+        }
+    }
+}
+
+.home-section-2 {
+    .section-content {
+        position: relative;
+        padding: 20px 0 20px 80px;
+        text-align: center;
+        .images {
+            .s-img {
+                vertical-align: middle;
+                &:nth-child(2) {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .description {
+            margin: 10px 0 20px;
+            font-size: 25px;
+            color: $blue;
+            a {
+                margin-left: 10px;
+                padding: 5px 30px;
+                border: 1px solid $blue;
+                border-radius: 25px;
+                font-size: 18px;
+                color: $blue;
+                &:hover {
+                    background-color: $blue;
+                    color: #fff;
+                }
+            }
+        }
+        .info {
+            font-size: 18px;
+            color: #E5770A;
         }
     }
 }
