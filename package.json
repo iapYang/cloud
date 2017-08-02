@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/iapYang/cloud#readme",
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-plugin-html": "^3.1.1",
     "iapyang-vue-template": "^0.5.2"
   }
 }
