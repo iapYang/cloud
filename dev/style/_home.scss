@@ -1,4 +1,13 @@
 $blue: #2FA5F4;
+
+@mixin child-delay($times) {
+    @for $i from 3 through ($times + 2) {
+        &:nth-child(#{$i}) {
+            transition-delay: 0.6s + (5 - $i) * 0.3s;
+        }
+    }
+}
+
 .main,
 .home {
     position: relative;
@@ -173,6 +182,50 @@ $blue: #2FA5F4;
     overflow: hidden;
 }
 
+.home-section-5 {
+    height: 680px;
+    background-image: url(https://dn-jdy-blog.qbox.me/index/home/secfinebg.jpg);
+    .title,
+    .description {
+        padding-top: 40px;
+        transition: all ease 0.6s;
+        transform: translateY(100px);
+        text-align: center;
+    }
+    .title {
+        font-size: 40px;
+        font-weight: 600;
+        transition: all .6s;
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    .description {
+        font-size: 16px;
+        transition: all .6s 0.3s;
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    .image {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all .6s;
+        transform: translate(0, 100px);
+        opacity: 0;
+
+        @include child-delay(3);
+    }
+    &.fadeIn {
+        .title,
+        .description,
+        .image {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+    }
+}
+
 @media (max-width: 1280px) {
     .home-section-4 {
         height: 600px;
@@ -181,6 +234,9 @@ $blue: #2FA5F4;
 
 @media (max-width: 1024px) {
     .home-section-4 {
+        height: 480px;
+    }
+    .home-section-5 {
         height: 480px;
     }
 }
