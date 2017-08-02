@@ -1,0 +1,23 @@
+{
+  "name": "jiandaoyun-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cli": "iapvt cli -r -s",
+    "start": "iapvt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iapYang/cloud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iapYang/cloud/issues"
+  },
+  "homepage": "https://github.com/iapYang/cloud#readme",
+  "devDependencies": {
+    "iapyang-vue-template": "^0.5.2"
+  }
+}
