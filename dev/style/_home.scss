@@ -480,6 +480,16 @@ $blue: #2FA5F4;
     }
 }
 
+@media (max-width: 960px) {
+    .home-section-2 {
+        .section-content {
+            width: 100%;
+            background-position: 0 0;
+            padding: 20px;
+        }
+    }
+}
+
 @media (max-width: 950px) {
     .home-section-column {
         .navi-icon .column {
@@ -537,6 +547,19 @@ $blue: #2FA5F4;
                 width: 80px;
                 height: 30px;
                 line-height: 30px;
+                font-size: 14px;
+            }
+        }
+    }
+    .home-section-2 {
+        .section-content {
+            .s-img {
+                width: 30%;
+                &:nth-child(2) {
+                    width: 10px;
+                }
+            }
+            .description {
                 font-size: 14px;
             }
         }
