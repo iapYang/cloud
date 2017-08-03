@@ -517,6 +517,36 @@ $blue: #2FA5F4;
             }
         }
     }
+    .home-section-3 {
+        .title-normal {
+            font-size: 18px;
+        }
+    }
+    .home-section-4 {
+        height: 420px;
+        .title {
+            font-size: 30px;
+            padding-top: 30px;
+        }
+        .description {
+            font-size: 16px;
+            padding-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .home-section-6 {
+        .phone-wrapper {
+            .column {
+                    width: 100%;
+                margin-top: 10px;
+                .s-info {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 580px) {
@@ -570,6 +600,9 @@ $blue: #2FA5F4;
             font-size: 24px;
             padding: 20px 0;
         }
+        .title-normal {
+            display: none;
+        }
         .navi-icon {
             .column {
                 .image-wrapper {
@@ -582,6 +615,23 @@ $blue: #2FA5F4;
                     }
                 }
             }
+        }
+    }
+    .home-section-4 {
+        height: 200px;
+        .description {
+            display: none;
+        }
+    }
+    .home-section-5 {
+        height: 300px;
+        .description {
+            display: none;
+        }
+    }
+    .home-section-6 {
+        .title {
+            font-size: 24px;
         }
     }
 }
