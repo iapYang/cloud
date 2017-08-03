@@ -1,3 +1,13 @@
+import $ from 'jquery';
+
 import '../style/style.scss';
 
-console.log('23333hiashih');
+const $menu = $('.menu');
+
+$('.menu-icon').on('click', () => {
+    if ($menu.hasClass('active')) {
+        $menu.removeClass('active');
+    } else {
+        $menu.addClass('active');
+    }
+});
