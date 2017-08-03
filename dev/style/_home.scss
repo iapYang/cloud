@@ -404,10 +404,11 @@ $blue: #2FA5F4;
         margin-top: 50px;
         position: relative;
         width: 100%;
-        height: 656px;
+        // height: 656px;
+        height: 100%;
         background-image: url('https://dn-jdy-blog.qbox.me/index/home/bannertwo.png');
         background-size: 100% 100%;
-        padding-top: 70px;
+        padding: 70px 0;
         .wrapper-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -421,6 +422,33 @@ $blue: #2FA5F4;
                 border-right: 1px solid #e7e6e6;
                 border-bottom: 1px solid #e7e6e6;
             }
+        }
+    }
+}
+
+.home-section-9 {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    background-image: url('https://dn-jdy-blog.qbox.me/index/home/secninebg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    .title {
+        font-size: 40px;
+        font-weight: 600;
+        padding: 200px 0 40px;
+        text-align: center;
+    }
+    .btn {
+        padding: 12px 60px;
+        font-size: 18px;
+        border-radius: 25px;
+        border: 1px solid #fff;
+        color: #fff;
+        &:hover {
+            background-color: #fff;
+            color: #555;
         }
     }
 }
