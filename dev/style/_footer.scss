@@ -13,6 +13,12 @@
         &.line-2 {
             width: 15%;
         }
+        &.line-3 {
+            width: 35%;
+        }
+        &.line-4 {
+            width: 17.5%;
+        }
         .row {
             height: 44px;
             color: #fff;
@@ -20,6 +26,63 @@
             &.grey {
                 color: #999;
                 padding: 10px 0 10px 7px;
+                img {
+                    margin-top: 10px;
+                    width: 126px;
+                    height: 126px;
+                }
+            }
+            .service-name,
+            .info {
+                font-size: 14px;
+                color: inherit;
+            }
+            .left {
+                width: 20%;
+                display: inline-block;
+                vertical-align: top;
+                .icon {
+                    width: 30px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    &.phone {
+                        background: url('https://dn-jdy-blog.qbox.me/index/icon_phone.png') center center no-repeat;
+                    }
+                    &.wx {
+                        background: url('https://dn-jdy-blog.qbox.me/index/icon_wxs.png') center center no-repeat;
+                    }
+                    &.man {
+                        background: url('https://dn-jdy-blog.qbox.me/index/man.png') center center no-repeat #fff;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid #30383e;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        background-size: 70% 70%;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .right {
+                display: inline-block;
+                width: 80%;
+                vertical-align: top;
+                text-align: left;
+                .text {
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 40px;
+                    position: relative;
+                    cursor: pointer;
+                    a {
+                        font-size: inherit;
+                        line-height: inherit;
+                        color: inherit;
+                    }
+                }
             }
         }
         .column {
@@ -33,6 +96,36 @@
                 font-size: 14px;
             }
         }
+    }
+}
+
+.footer-info {
+    margin-top: 50px;
+    display: block;
+    font-size: 12px;
+    .line {
+        margin-top: 8px;
+        text-align: center;
+        color: #989898;
+        span {
+            font-size: 14px;
+            color: inherit;
+        }
+        a {
+            color: #989898;
+            margin-left: 10px;
+        }
+    }
+}
+
+.security {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    img {
+        width: 83px;
     }
 }
 
