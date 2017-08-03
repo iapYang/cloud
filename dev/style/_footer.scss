@@ -1,0 +1,43 @@
+.footer {
+    position: relative;
+    padding: 36px 0;
+    background: #363e44;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    .line {
+        display: inline-block;
+        vertical-align: top;
+        &.line-2 {
+            width: 15%;
+        }
+        .row {
+            height: 44px;
+            color: #fff;
+            font-size: 14px;
+            &.grey {
+                color: #999;
+                padding: 10px 0 10px 7px;
+            }
+        }
+        .column {
+            height: 30px;
+            line-height: 30px;
+            padding: 0 7px;
+            display: inline-block;
+            font-size: 14px;
+            a {
+                color: #ccc;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .footer-content {
+        padding: 0 10px;
+    }
+}
