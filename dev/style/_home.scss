@@ -128,6 +128,7 @@ $blue: #2FA5F4;
             text-align: center;
             padding: 20px 0;
             position: relative;
+            vertical-align: top;
             .image-wrapper {
                 width: 62%;
                 margin: 0 auto;
@@ -561,6 +562,25 @@ $blue: #2FA5F4;
             }
             .description {
                 font-size: 14px;
+            }
+        }
+    }
+    .home-section-3 {
+        .title-big {
+            font-size: 24px;
+            padding: 20px 0;
+        }
+        .navi-icon {
+            .column {
+                .image-wrapper {
+                    .image {
+                        margin: 0 auto 5px;
+                    }
+                    .title {
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
             }
         }
     }
